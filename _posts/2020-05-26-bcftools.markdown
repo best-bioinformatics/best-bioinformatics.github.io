@@ -12,8 +12,8 @@ bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t.\t.\n' example
 #=> extract the first 6 columns of the bcf/vcf file.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the [bcftools docs][bcftools-docs] for more info on how to get the most out of bcftools. 
+File all bugs/feature requests at [Best Bioinformatics’s GitHub repo][best-bioinformatics-gh].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[bcftools-docs]: http://samtools.github.io/bcftools/bcftools.html
+[best-bioinformatics-gh]: https://github.com/best-bioinformatics/samtools.github.com
