@@ -10,9 +10,6 @@ You can find all sorts of information about teaching, training, research and out
 Bioinformatics Seminar
 
 RNAseq Analysis:
-<!--
-<iframe width="480" height="360" src="https://www.youtube.com/watch?v=8y4QyYS9ZEc" frameborder="0"> </iframe>
--->
 {% if include.width != '' %}
   <div style="width: {{include.width}}; margin:0 auto;">
 {% else %}
@@ -20,5 +17,6 @@ RNAseq Analysis:
 {% endif %}
   <div class="ytcontainer">
     <iframe class="yt" allowfullscreen src="https://www.youtube.com/embed/{{8y4QyYS9ZEc}}"></iframe>
+    <iframe class="yt" allowfullscreen src="https://youtu.be/8y4QyYS9ZEc"></iframe>
   </div>
 </div>
