@@ -28,8 +28,8 @@ twitter_username:
 github_username:  best-bioinformatics
 
 # Build settings
-#theme: minima
-theme: jekyll-theme-leap-day
+theme: minima
+#theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
