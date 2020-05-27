@@ -29,7 +29,7 @@ github_username:  best-bioinformatics
 
 # Build settings
 #theme: minima
-theme: bulma-clean-theme
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
