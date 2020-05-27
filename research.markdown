@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Research
+permalink: /research/
 ---
 
 This is the [bestbioinformatics](http://bestbioinformatics.com/) official website. 
