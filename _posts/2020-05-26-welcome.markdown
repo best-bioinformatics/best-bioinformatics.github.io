@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Welcome to BestBioinformatics.com!"
+date:   2020-05-26 18:15:57 -0400
+categories: jekyll update
+---
+Hello, welcome to bestbioinformatics.com, it is centralized web portal for all the discussion, teaching, research of bioinformatics. 
+
+It will constantly updates with the latest progress of bioinformatics research. 
+
+
+
+BestBioinformatics.com also offers powerful ideas that changes the bioinformatics research.
