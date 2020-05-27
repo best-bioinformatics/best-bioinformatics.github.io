@@ -17,6 +17,5 @@ RNAseq Analysis:
 {% endif %}
   <div class="ytcontainer">
     <iframe class="yt" allowfullscreen src="https://www.youtube.com/embed/{{8y4QyYS9ZEc}}"></iframe>
-    <iframe class="yt" allowfullscreen src="https://youtu.be/8y4QyYS9ZEc"></iframe>
   </div>
 </div>
