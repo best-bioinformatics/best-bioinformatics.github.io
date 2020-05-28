@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "gsutil"
+date:   2020-05-28 15:57:57 -0300
+categories: jekyll update
+---
+Transfer data to and from google bucket using gsutil.
+
+{% highlight bash %}
+gsutil -m -u gspccdgqc cp -r -c gs://bucketname/ .
+#=> download the google bucket data to local directory.
+{% endhighlight %}
+
+Check out the [gsutil docs][gsutil-docs] for more info on how to get the most out of bcftools. 
+File all bugs/feature requests at [Best Bioinformatics’s GitHub repo][best-bioinformatics-gh].
+
+[gsutil-docs]:https://cloud.google.com/storage/docs/gsutil/commands/cp
+
