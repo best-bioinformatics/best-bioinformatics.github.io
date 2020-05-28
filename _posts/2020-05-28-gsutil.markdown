@@ -12,7 +12,6 @@ gsutil -m -u gspccdgqc cp -r -c gs://bucketname/ .
 {% endhighlight %}
 
 Check out the [gsutil docs][gsutil-docs] for more info on how to get the most out of bcftools. 
-File all bugs/feature requests at [Best Bioinformatics’s GitHub repo][best-bioinformatics-gh].
 
 [gsutil-docs]:https://cloud.google.com/storage/docs/gsutil/commands/cp
 
