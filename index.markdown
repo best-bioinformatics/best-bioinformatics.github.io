@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+Hello! Welcome to bestbioinformatics, it is a place we share powerful ideas that changed the bioinformatics research. 
+

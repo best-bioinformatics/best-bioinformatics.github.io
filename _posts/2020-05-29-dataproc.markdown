@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "dataproc"
+date:   2020-05-29 12:57:57 -0300
+categories: jekyll update
+---
+Create auto scale dataproc will be both time and cost effective for your research.
+
+
+{% highlight bash %}
+curl https://raw.githubusercontent.com/hail-is/dataproc-autoscaling-configs/master/add-all.sh | bash
+#=> Create policies max-10, max-50, max-100, max-500.
+
+hailctl dataproc start hailqc  --autoscaling-policy=max-50
+#=> Create the dataproc cluster hailqc
+
+hailctl dataproc submit hailqc hailQCscripts.py
+
+{% endhighlight %}
+
+Check out the [hail_docs][ref-docs] for more info on how to get the most out of bcftools. 
+
+[ref-docs]:https://hail.zulipchat.com/#narrow/stream/123010-Hail-0.2E2.20support/topic/Export.20to.20VCF
+
