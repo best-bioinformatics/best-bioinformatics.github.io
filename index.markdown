@@ -6,4 +6,34 @@ layout: home
 
 Hello! Welcome to bestbioinformatics, it is a place we share powerful ideas that changed the bioinformatics research.
 
-keywords: bioinformatics, biostatistics, statistical genetics, computational biology
+This website is all about. bioinformatics, biostatistics, statistical genetics and computational biology. 
+
+---
+
+<div class="container">
+<h4><a name="Contact"></a>Contact</h4>
+
+    <div class="row-fluid">
+        <div class="span5">
+            BestBioinformatics.com <br/>
+            <a href="#">Research</a><br/>
+            <a href="#">Training</a><br/>
+            <a href="#">Post</a><br/>
+            Based in Cambridge <br/>
+            MA<br/>
+            USA<br/><br/>
+
+            <div id="hide_email">
+            Email: <code>bestbioinfo</code><b>jumblejumble</b><code>@gmail.com</code><br/>
+            Phone: (617) 651-0869
+            </div>
+        </div>
+
+        <div class="span2">
+        <a href="../assets/pics/ryan_small.png">
+            <img src="../assets/pics/ryan.jpg"
+                  title="Best Bioinformatics" alt="Best Bioinformatics"/></a>
+        </div>
+    </div>
+</div>
+---
