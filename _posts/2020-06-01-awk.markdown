@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "awk"
+date:   2020-06-01 12:57:57 -0300
+categories: jekyll update
+---
+
+How to use ‘awk’ to print columns from a text file (in any order).
+
+
+
+{% highlight bash %}
+
+{% endhighlight %}
+
+
+Printing columns of information from Unix text files is easy, especially using commands like awk, perl, and more recently, ruby. This short tutorial shows my old-school awk way of doing this.
+
+awk column printing examples
+Suppose you have a file named foo with contents like this:
+
+1 2 3
+a b c
+You can easily use awk to print columns of information from this file. Here are a few examples that show how to print the data columns from the file:
+
+{% highlight bash %}
+$ cat foo
+
+1 2 3
+a b c
+
+{% endhighlight %}
+{% highlight bash %}
+$ awk '{ print $1 }' foo
+
+1
+a
+
+{% endhighlight %}
+{% highlight bash %}
+$ awk '{ print $2 }' foo
+
+2
+b
+
+{% endhighlight %}
+
+{% highlight bash %}
+$ awk '{ print $1, $3 }' foo
+
+1 3
+a c
+
+{% endhighlight %}
+As you can see, with awk you can print any column you want, and can print the columns in any order you want.
+
+While all of these examples show awk working directly on a file, it can also read its input from a Unix pipeline, like this:
+
+{% highlight bash %}
+$ cat foo | awk '{ print $3, $1 }'
+
+3 1
+c a
+
+{% endhighlight %}
+awk is a great tool for rearranging columns in Unix text file output.
+
+
+ If tab delimited table will be created, you can use.
+{% highlight bash %}
+$ awk -F '\t' '{ print $1, $3 }' fo
+
+{% endhighlight %}
+
+ The following command will help print tab delimited output in awk
+
+{% highlight bash %}
+awk -v OFS="\t" '{ print $1,$2,$2,$4,$5 }' XX.vcf > XX.avinput
+
+{% endhighlight %}
+ create any combination of delimiters we want for the txt files.
+
+{% highlight bash %}
+awk -v OFS='' '{print $1,"\t",$2,"\t",$3,"\t",$4,"|",$5,"|",$6,"|",$7,"|",$8}' Hs_EPDnew_006_hg19.bed > EPDnew_hg19.bed
+
+{% endhighlight %}
+
+
+
+Check out the [hail_docs][ref-docs] for more info on how to get the most out of bcftools. 
+
+[ref-docs]:https://hail.zulipchat.com/#narrow/stream/123010-Hail-0.2E2.20support/topic/Export.20to.20VCF
+

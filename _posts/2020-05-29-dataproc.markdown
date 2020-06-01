@@ -18,6 +18,12 @@ hailctl dataproc submit hailqc hailQCscripts.py
 
 {% endhighlight %}
 
+{% highlight bash %}
+hailctl dataproc start exportmt2vf  --autoscaling-policy=max-50
+
+
+{% endhighlight %}
+
 Check out the [hail_docs][ref-docs] for more info on how to get the most out of bcftools. 
 
 [ref-docs]:https://hail.zulipchat.com/#narrow/stream/123010-Hail-0.2E2.20support/topic/Export.20to.20VCF
