@@ -11,7 +11,7 @@ This website is all about. bioinformatics, biostatistics, statistical genetics a
 ---
 
 <div class="container">
-<h4><a name="Contact"></a>Contact</h4>
+<h4><a name=""></a>Contact</h4>
 
     <div class="row-fluid">
         <div class="span5">
