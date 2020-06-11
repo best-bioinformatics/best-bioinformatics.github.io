@@ -9,7 +9,11 @@ Extract first 6 columns of bcf file into variant list:
 
 {% highlight bash %}
 bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t.\t.\n' example.bcf > ../../example-variant-list.vcf &
-#=> extract the first 6 columns of the bcf/vcf file.
+#=> extract the first 9 columns of the bcf/vcf file.
+
+bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO/QC\t.\n' example.vcf.bgz > example.siztes.vcf 
+#=> extract the first 9 columns of the bcf/vcf file.
+
 {% endhighlight %}
 
 Check out the [bcftools docs][bcftools-docs] for more info on how to get the most out of bcftools. 
