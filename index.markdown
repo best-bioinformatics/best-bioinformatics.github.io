@@ -20,12 +20,6 @@ This website is all about. bioinformatics, biostatistics, statistical genetics a
             <a href="#">Training</a><br/>
             <a href="#">Post</a><br/>
             Based in Cambridge, MA, USA<br/>
-						<!--
-            <div id="hide_email">
-            Email: <code>bestbioinfo</code><code>@gmail.com</code><br/>
-            Phone: (617) 651-0869
-            </div>
-						-->
         </div>
 
         <div class="span2">
