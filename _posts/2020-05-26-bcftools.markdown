@@ -8,11 +8,28 @@ categories: jekyll update
 Extract first 6 columns of bcf file into variant list:
 
 {% highlight bash %}
+
+bcftools view VX.vcf -Oz -o VX.vcf.bgz
+#=> compress VCF into VCF.bgz
+
 bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t.\t.\n' example.bcf > ../../example-variant-list.vcf &
 #=> extract the first 9 columns of the bcf/vcf file.
 
 bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO/QC\t.\n' example.vcf.bgz > example.siztes.vcf 
 #=> extract the first 9 columns of the bcf/vcf file.
+
+bcftools index VX.Full.vcf.bgz
+#=> index VCF files
+
+bcftools stats VX.Full.vcf.bgz > VX.stats.txt
+#=> calculate the stats of the VCF files. 
+
+bcftools stats VX.Full.vcf.bgz GX.Full.vcf.bgz > GTX.stats.txt
+#=> calculate the stats of the two VCF files(degree of Overlap, Ts/Tv, etc). 
+
+bcftools isec -p OverlapVG VX.vcf.bgz GX.vcf.bgz
+#=> intersect two VCF files.
+
 
 {% endhighlight %}
 
