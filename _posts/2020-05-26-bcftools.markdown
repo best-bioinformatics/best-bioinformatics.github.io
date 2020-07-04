@@ -9,6 +9,9 @@ Extract first 6 columns of bcf file into variant list:
 
 {% highlight bash %}
 
+bcftools reheader -h new.header output.vcf.bgz
+#=> change header.
+
 bcftools view VX.vcf -Oz -o VX.vcf.bgz
 #=> compress VCF into VCF.bgz
 
@@ -21,15 +24,27 @@ bcftools query -f'%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO/QC\t.\n' 
 bcftools index VX.Full.vcf.bgz
 #=> index VCF files
 
+bcftools norm -m-both input.vcf.gz -o output.vcf
+bcftools norm -m -any input.vcf.bgz -Ov -o output.m.vcf
+#=> Split multi-allelic variants calls into separate lines. Sometimes it reports none of the variants can be decomposed despite the presence of such variants in the file.
+
+bcftools norm -f hg38.fasta input.vcf -o output.m.vcf
+#=> Perform the actual left-normalization. The FASTA file is needed. 
+
 bcftools stats VX.Full.vcf.bgz > VX.stats.txt
 #=> calculate the stats of the VCF files. 
 
 bcftools stats VX.Full.vcf.bgz GX.Full.vcf.bgz > GTX.stats.txt
-#=> calculate the stats of the two VCF files(degree of Overlap, Ts/Tv, etc). 
+#=> calculate the stats of the two VCF files (degree of Overlap, Ts/Tv, etc). 
 
 bcftools isec -p OverlapVG VX.vcf.bgz GX.vcf.bgz
 #=> intersect two VCF files.
 
+bcftools merge -m all A.bcf B.bcf C.bcf -Oz -o merged.bgz
+#=> Merged BCF/VCF files (A,B,C) into one merged.bgz vcf file.
+
+bcftools merge --force-samples -m all A.bcf B.bcf C.bcf -Oz -o merged.bgz
+#=> during the merged if there are overlapping samples use the --force-samples.
 
 {% endhighlight %}
 
