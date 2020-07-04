@@ -12,21 +12,12 @@ This website is all about. bioinformatics, biostatistics, statistical genetics a
 
 <div class="container">
 <h4><a name=""></a>Contact</h4>
-
     <div class="row-fluid">
-        <div class="span5">
             BestBioinformatics.com <br/>
             <a href="#">Research</a><br/>
             <a href="#">Training</a><br/>
             <a href="#">Post</a><br/>
             Based in Cambridge, MA, USA<br/>
-        </div>
-
-        <div class="span2">
-        <a href="img/logo/icon.png">
-            <img src="img/logo/icon.png"
-                  title="Best Bioinformatics" alt="Best Bioinformatics"/></a>
-        </div>
     </div>
 </div>
 ---
