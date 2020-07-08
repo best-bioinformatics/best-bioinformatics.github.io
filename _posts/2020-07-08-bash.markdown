@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "bash"
+date:   2020-06-01 12:57:57 -0300
+categories: jekyll update
+---
+
+How to use ‘awk’ to print columns from a text file (in any order).
+
+
+
+{% highlight bash %}
+
+{% endhighlight %}
+
+Copy Folder structure:
+{% highlight bash %}
+$ find . -type d > dirs.txt
+#=> To create the list of directories, then
+$ xargs mkdir -p < dirs.txt
+#=> To create the directories on the destination.
+{% endhighlight %}
+
+{% highlight bash %}
+{% endhighlight %}
+
+{% highlight bash %}
+{% endhighlight %}
+
+{% highlight bash %}
+{% endhighlight %}
+
+
+{% highlight bash %}
+{% endhighlight %}
+
+Check out the [Bash_docs][ref-docs] for more info on how to get the most out of bcftools. 
+
+[ref-docs]:https://www.gnu.org/software/bash/
+
