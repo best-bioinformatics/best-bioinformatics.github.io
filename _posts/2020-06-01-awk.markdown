@@ -83,6 +83,11 @@ awk -v OFS="\t" '{ print $1,$2,$2,$4,$5 }' XX.vcf > XX.avinput
 {% highlight bash %}
 awk -v OFS='' '{print $1,"\t",$2,"\t",$3,"\t",$4,"|",$5,"|",$6,"|",$7,"|",$8}' Hs_EPDnew_006_hg19.bed > EPDnew_hg19.bed
 
+for fl in *.bed; 
+do echo $fl; 
+awk -v OFS='' '{print $1,"\t",$2,"\t",$3,"\t",$4,"|",$5,"|",$6}' $fl > /n/anotherfolder/LAB/$fl; 
+done;
+
 {% endhighlight %}
 
 
